@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+     
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:textSize="12dp"
+        android:textColor="#454545"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="Techspardha16" />
+        <ImageView
+        android:id="@+id/fb"
+        android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt"
+            android:layout_alignLeft="@+id/g"
+            android:src="@drawable/fb"
+         />
+
+       <ImageView
+             android:id="@+id/g"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="63dp"
+            android:src="@drawable/g"
+            />
+
+       <ImageView
+           android:id="@+id/imgLogo"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_above="@+id/g"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="53dp"
+           android:src="@drawable/ts_logo" />
+       
+</RelativeLayout>

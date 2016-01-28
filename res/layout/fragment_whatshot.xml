@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:background="#161616"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Contact Us"
+        android:textSize="32dp" 
+        android:textColor="#8bc34a"/>
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView06"
+        android:layout_alignBottom="@+id/TextView06"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+         android:textColor="#FFFFFF"
+        android:text="Bharatdeep Maan"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtLabel1"
+        android:layout_marginTop="44dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="Publicity:"
+         android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/txtLabel6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/TextView07"
+         android:layout_below="@+id/TextView07"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:clickable="true"
+           android:autoLink="phone"
+         android:text="7206549590"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView03"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/TextView07"
+         android:layout_below="@+id/TextView05"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:clickable="true"
+           android:autoLink="phone"
+         android:text="8950494606"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView02"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/TextView09"
+         android:layout_below="@+id/TextView09"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:clickable="true"
+           android:autoLink="phone"
+         android:text="9802229395"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView10"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/txtLabel6"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:text="Event Management:"
+          android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView05"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/TextView10"
+         android:layout_alignBottom="@+id/TextView10"
+         android:layout_alignLeft="@+id/txtLabel6"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:text="Kartik"
+          android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView08"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/TextView02"
+         android:layout_alignParentLeft="true"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:text="Hospitality:"
+          android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView01"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/txtLabel1"
+         android:layout_centerHorizontal="true"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:text="info@techspardha.org"
+          android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView09"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/TextView05"
+         android:layout_below="@+id/TextView03"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:text="Neeraj"
+          android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+</RelativeLayout>

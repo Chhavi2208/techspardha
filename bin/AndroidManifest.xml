@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gawds.techspardha"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+   
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <permission
+        android:name="com.gawds.techspardha.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.gawds.techspardha.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:maxSdkVersion="21" android:name="android.permission.CALL_PHONE"/>
+      
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Techspardha"
+        android:theme="@style/AppBaseTheme"
+         >
+        
+    <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <activity
+            android:name="com.gawds.techspardha.StartActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gawds.techspardha.HomeActivity"
+            android:label="Techspardha" >
+        </activity>
+        
+         <activity
+            android:name="com.gawds.techspardha.LoginSplashActivity"
+            android:label="@string/app_name" 
+             android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        
+        <activity
+            android:name="com.gawds.techspardha.Noti"
+            android:label="Notifications"
+             >
+        </activity>
+        <activity
+            android:name="com.gawds.techspardha.New"
+            android:label="Today's Events"
+             >
+        </activity>
+        <activity
+            android:name="com.gawds.techspardha.DataBaseHandler"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.gawds.techspardha.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.gawds.techspardha.Async"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.gawds.techspardha.EventsMainActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <activity
+            android:name="com.gawds.techspardha.MainActivity2"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.gawds.techspardha.MidActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar">
+             
+        </activity>
+        <activity
+            android:name="com.gawds.techspardha.Competitions"
+            android:label="Competitions"
+             >
+        </activity>
+         <activity
+            android:name="com.gawds.techspardha.LogoutActivity"
+            android:label="Logging out..."
+             android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.gawds.techspardha.Notifications"
+            android:label="Notifications" >
+        </activity>
+        
+        <activity
+            android:name="com.gawds.techspardha.Events"
+            android:label="Events" 
+              >
+        </activity>
+        
+        <activity
+            android:name="com.gawds.techspardha.EventsPage"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.facebook.LoginActivity"
+/>        
+        
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.androidhive.pushnotifications" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.gawds.techspardha.GCMIntentService" />
+        <meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId"/>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAE4uugdWp7CZ4OQjGP1tAWgcNbYIz5dXI" />
+ 
+    </application>
+
+</manifest>

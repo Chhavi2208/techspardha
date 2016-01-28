@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#161616"
+    android:layout_height="match_parent">
+     
+     <TextView
+        android:id="@+id/txtLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Tech-Talks"
+        android:textSize="32dp"
+         android:textColor="#8bc34a" />
+
+    <WebView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtLabel1"
+        android:layout_marginTop="18dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        
+        android:textSize="16dp" />
+    
+     <TextView
+           android:id="@+id/txtLabel5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignTop="@+id/txtLabel3"
+           android:layout_marginTop="20dp"
+           android:paddingTop="20dp"
+           android:text="Deeksha"
+            android:textColor="#ffffff"
+           android:paddingLeft="10dp"
+           android:textSize="16dp" />
+
+       <TextView
+           android:id="@+id/txtLabel4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/txtLabel3"
+           android:paddingTop="20dp"
+           android:text="Pooja"
+            android:textColor="#ffffff"
+           android:paddingLeft="10dp"
+           android:textSize="16dp" />
+
+       <TextView
+           android:id="@+id/txtLabel3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/txtLabel"
+           android:paddingTop="20dp"
+           android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+           android:text="Contact Us:"
+           android:textSize="16dp" />
+
+       <TextView
+           android:id="@+id/txtLabel7"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/txtLabel4"
+           android:layout_alignBottom="@+id/txtLabel4"
+           android:layout_toRightOf="@+id/txtLabel3"
+           android:paddingTop="20dp"
+            android:textColor="#ffffff"
+           android:text="9802917745"
+           android:clickable="true"
+           android:autoLink="phone"
+           android:textSize="16dp" />
+
+       <TextView
+           android:id="@+id/txtLabel6"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/txtLabel5"
+           android:layout_alignBottom="@+id/txtLabel5"
+           android:layout_toRightOf="@+id/txtLabel3"
+           android:paddingTop="20dp"
+           android:text="9416380744"
+            android:textColor="#ffffff"
+           android:clickable="true"
+           android:autoLink="phone"
+           android:textSize="16dp" />
+ 
+</RelativeLayout>
